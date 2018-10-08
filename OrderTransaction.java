@@ -23,6 +23,8 @@ public class OrderTransaction implements Serializable{
 		this.copies = copies;
 		this.cost = cost;
 	}
+	
+
 
 
 	@Override
