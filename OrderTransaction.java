@@ -29,8 +29,8 @@ public class OrderTransaction implements Serializable{
 
 	@Override
 	public String toString() {
-		return "OrderTransaction [iD=" + iD + ", date=" + date + ", orderType=" + orderType + ", copies=" + copies
-				+ ", cost=" + cost + "]";
+		return   iD + ". " + date + ", " + orderType + ", " + copies
+				+ ", " + cost ;
 	}
 	
 }

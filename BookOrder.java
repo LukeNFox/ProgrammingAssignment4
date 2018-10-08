@@ -59,6 +59,7 @@ public class BookOrder implements Serializable{
 	
 	public void getTransactionDetail() {
 		
+		System.out.print("\n-------------TRANSACTION DETAILS-----------\n");
 		for(OrderTransaction element : list) {
 			System.out.println("\n" + element.toString());
 			
@@ -68,8 +69,10 @@ public class BookOrder implements Serializable{
 	
 	@Override
 	public String toString() {
-		return "BookOrder [customerName=" + customerName + ", orderNumber=" + orderNumber + ", totalCost=" + totalCost
-				+ ", Number of books =" + copies + "]";
+		return "\n-------------ORDER DETAILS-----------\n" 
+				+"OrderNumber = " + orderNumber + ", " + "CustomerName = " + customerName  + ", Number of books = " + copies+ 
+				"," + " TotalCost = " + totalCost + "\n"
+				 ;
 	}
 	
 }
